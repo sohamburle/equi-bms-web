@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bombay Metal Scene :: Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="fantastico Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <link href="css/fonts.css" rel='stylesheet' type='text/css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document)
+            .ready(function ($) {
+                $(".scroll")
+                    .click(function (event) {
+                        event.preventDefault();
+                        $('html,body')
+                            .animate({
+                                scrollTop: $(this.hash)
+                                    .offset()
+                                    .top
+                            }, 1000);
+                    });
+            });
+    </script>
+    <!--start-smoth-scrolling-->
+    <!--start-top-nav-script-->
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+            $(pull)
+                .on('click', function (e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+            $(window)
+                .resize(function () {
+                    var w = $(window)
+                        .width();
+                    if (w > 320 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+        });
+
+    </script>
+    <!--End-top-nav-script-->
+</head>
+
+<body>
+<noscript><div id="noscript-padding"></div></noscript>
+<!--start-header-->
+<div class="header" id="home">
+    <div class="container">
+        <div class="head">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""/>
+                </a>
+            </div>
+            <div class="navigation">
+                <span class="menu"></span>
+                <ul class="navig">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="download.php" class="active">Download</a></li>
+                    <li><a href="/edit/">Add/Edit In-app Data</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- script-for-menu -->
+<!-- script-for-menu -->
+<script>
+    $("span.menu")
+        .click(function () {
+            $(" ul.navig")
+                .slideToggle("slow", function () {
+                });
+        });
+
+</script>
+<!-- script-for-menu -->
+<!--start-work-->
+
+<div class="container body_wrap">
+    <div class="download_clear">
+        <div class="download">
+            <div class="clearfix"></div>
+            <div class="b-btn">
+                <a href="BombayMetalScene.apk" class="download">Download BMS</a>
+            </div>
+            <div style="margin-botton: 15px;">
+                <p class="version">Version 0.10</p>
+                <p>Downloaded <?php /*include( '../downloads/count.txt'); */?> times</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="changelog">
+        <h3>Changelog</h3>
+        <br/>
+        <br/>
+        <h4>Version 0.10</h4>
+        <ol>
+            <li>Added and completed Merch section.</li>
+            <li>Reworked on how data is downloaded. Data download should be quick now. (Depends
+                on your net speed though. Please be patient.)
+                <br>PS. Versions prior to this will still display data but will not download it
+                as fast as the this version does.
+            </li>
+            <li>Added a splash screen for a duration of 2 seconds. (Splash screen image is
+                made by <a href="https://www.facebook.com/Chinusalaskar">Chinmay Salaskar</a>!)
+            </li>
+            <li>Removed subsections of Events section.</li>
+            <li>Custom main layout now looks perfect on almost all devices.</li>
+            <li>Replaced 'Connection not available' toast message with a 'no connection' layout.
+            </li>
+            <li>Added list item click animation.</li>
+            <li>Removed update check on every app launch. Please check for update manually
+                from main menu.
+            </li>
+            <li>Strengthened the refresh data logic. Refresh data is only available under main
+                menu.
+            </li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.9</h4>
+        <ol>
+            <li>Completed Venues section.</li>
+            <li>Added a button in Jam Rooms' detail screen, on clicking it the location of
+                that jam room will be shown on Google Maps.
+            </li>
+            <li>Merged Reviews and News, now it's under News.
+            </li>
+            <li>Removed Managers | Organizers because of lack of data and necessity.</li>
+            <li>Added the current version name of app in the main screen menu.</li>
+            <li>Few layout improvements.</li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.8</h4>
+        <ol>
+            <li>Implemented a custom layout replacing Navigation Drawer. (Images used in the
+                layout are made by <a href="https://www.facebook.com/Chinusalaskar">Chinmay Salaskar</a>!)
+            </li>
+            <li>Merged Jam Rooms and Recording Studios, now it's under Music Studios.</li>
+            <li>Added a button to show Album tracks in Artists' detail screen. (button will
+                be visible only if the Artist has released something.)
+            </li>
+            <li>Added contact details to Artists' detail screen.
+            </li>
+            <li>Added an option to 'check for update' in menu of the main screen.</li>
+            <li>Made the app force Portrait layout.</li>
+            <li>Few other implementations.</li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.7</h4>
+        <ol>
+            <li>Reworked on how images are displayed in the list.</li>
+            <li>Fixed a bug in Jam Rooms detail view (introduced in previous version).</li>
+            <li>Added Launcher Icon. (Icon made by
+                <a href="https://www.facebook.com/Chinusalaskar">Chinmay Salaskar</a>!)
+            </li>
+            <li>Implemented Material Design for Update and Changelog Dialog.</li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.6.3</h4>
+        <ol>
+            <li>Force close after 'double press back to exit' fixed.</li>
+            <li>Added more fields to Artists detail view.
+            </li>
+            <li>Implemented ACRA (Application Crash Reports for Android), so every time this
+                app is crashed I'll know what made the app crash. And I will try to fix that
+                bug in next release.
+            </li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.6.2</h4>
+        <ol>
+            <li>After successful download, package installer will ask you if you want to install
+                the update! (no need to navigate to Download folder anymore. But you have
+                to launch the app from app drawer manually).
+            </li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.6.1</h4>
+        <ol>
+            <li>Implemented Changelog dialog.</li>
+            <li>Implemented double press back to exit.</li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.6</h4>
+        <ol>
+            <li>Implemented Update dialog. (But after download you have to navigate to the
+                Download folder to find the update)
+            </li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.5</h4>
+        <ol>
+            <li>Completed Jam Rooms section.</li>
+            <li>Changed the background color of lists.</li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.4.1</h4>
+        <ol>
+            <li>Added progress bar so as to let the user know there's something happening in
+                the background.
+            </li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.4</h4>
+        <ol>
+            <li>Completed Artist section.</li>
+            <li>App now downloads content from my website!</li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.3</h4>
+        <ol>
+            <li>Added a section for Recording Studios.</li>
+            <li>Added few entries in Artist section.</li>
+            <li>Added a detail view for Artist Section.</li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.2</h4>
+        <ol>
+            <li>Changed package name to better suit my new domain.</li>
+            <li>Added a section for Band Managers and Event Organizers.</li>
+            <li>Implemented Swipeable views for Events, Jam Rooms and Managers|Organizers sections.
+            </li>
+        </ol>
+
+        <hr/>
+
+        <h4>Version 0.1</h4>
+        <ol>
+            <li>Initial release.</li>
+            <li>Implemented Navigation Drawer.</li>
+            <li>Added sections News, Events, Reviews, Artists, Jam Rooms and Labels.</li>
+        </ol>
+    </div>
+</div>
+
+<!-- Portfolio Ends Here -->
+
+<!--end-work-->
+<!--start-footer-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#"><span class="fb"> </span></a>
+                    </li>
+                    <li><a href="#"><span class="twt"> </span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2015 <a href="http://equitharn.in/">equitharn.in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">This site works best with JavaScript enabled. Please enable it!</div>
+    </noscript>
+    <script type="text/javascript">
+        $(document)
+            .ready(function () {
+                /*
+                 var defaults = {
+                 containerID: 'toTop', // fading element id
+                 containerHoverID: 'toTopHover', // fading element hover id
+                 scrollSpeed: 1200,
+                 easingType: 'linear'
+                 };
+                 */
+
+                $().UItoTop({easingType: 'easeOutQuart'});
+
+            });
+    </script>
+    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover"
+                                                                             style="opacity: 1;"> </span>
+    </a>
+</div>
+<!--end-footer-->
+</body>
+
+</html>
